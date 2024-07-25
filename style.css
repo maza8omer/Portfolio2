@@ -1,0 +1,140 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.white-theme:root
+{
+--bgcolor: #22251D;
+--textwhite :#F6EDED;  
+  
+}
+.hero{
+  background: var(--bgcolor);
+  height: 100vh;
+  overflow: hidden;
+}
+.hero header nav{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.hero  header nav .logo{
+  color: #26D1C1;
+  font-size: 35px;
+  font-weight: bold;
+}
+.hero header nav .logo span
+{
+  color: #2A4008;
+}
+.hero header nav .nav-links  a
+{
+  color: var(--textwhite);
+  margin: 0 30px;
+  transition: 0.3s;
+}
+hero header nav  .nav-links  a:hover
+{
+  color: #23a3fe;
+  
+}
+.hero header nav  .btn-mode 
+{
+  color: var(--textwhite);
+  font-size:25px;
+  cursor: pointer;
+}
+
+.hero .contanier{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: end;
+  height: calc(100vh-100px);
+  position: relative;
+}
+
+.hero .contanier  .div-text
+{
+  position: absolute ;
+  left: 0;
+  top: 50;
+  transform: translateY(-50%);
+  width: 50%;
+}
+.hero  .contanier  .div-img
+{
+  position: absolute;
+  width: 34%; 
+  bottom: -5px;
+  margin-right:50px;
+ }
+ .hero  .contanier  .div-img  img
+ {
+   width:100%;
+ }
+ 
+ .hero .contanier  .div-text  h4
+ {
+   color :#0C1004;
+   font-size: 22px;
+ }
+ .hero .contanier  .div-text h1
+ {
+   color: var(--textwhite);
+   font-size: 60px;
+   margin: 15px 0 10px;
+ }
+.hero .contanier  .div-text  span
+{
+  color: #23a3fe;
+  font-size: 25px;
+  font-weight: bold;
+}
+.hero .contanier  .div-text  p
+{
+  color:#CEC1D0 ;
+line-height: 1.8;
+margin: 20px 0 40px;
+
+}
+
+.hero .contanier  .div-text  .btn 
+{
+  color: #fff;
+  background: #23a3fe;
+  padding: 15px 30px;
+  border: 1px solid #23a3fe;
+  transition: 0.3s;
+}
+.hero .contanier  .div-text  .btn:hover{
+  top: -8px;
+  box-shadow: 0 0 16px #23a3fe;
+}
+.social-icon{
+  color : #182184;
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  right: -50px;
+  display: flex ;
+  flex-direction: column;
+  gap: 40px;
+  }
+
+.social-icon  a{
+  color: #4854D4;
+  font-size: 25px;
+  transition: 0.3s;
+  
+}
+.social-icon  a:hover {
+  transform: scale(1.3);
+}
